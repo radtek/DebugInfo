@@ -81,6 +81,8 @@ BOOL CMainFrame::PreCreateWindow(CREATESTRUCT& cs)
 	wndClass.lpszClassName = _T("DebugMess");   
 	VERIFY(AfxRegisterClass(&wndClass));   
 	cs.lpszClass = wndClass.lpszClassName;
+
+	cs.lpszName = _T("调试信息显示窗口");
 	return TRUE;
 }
 
